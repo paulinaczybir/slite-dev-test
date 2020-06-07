@@ -7,16 +7,16 @@ import { Link } from 'react-router-dom';
     return (
       <nav>
         <ul>
-          <Link to="/favorites">
-          <li><img src="/star-plain/Star/plain.png" />Favorites</li>
+          <Link className="link" to="/favorites">
+          <li><img className="icon-small" src="/star-plain/Star/plain.png" />Favorites</li>
           </Link>
-          <Link to="/peopleandculture">
-          <li>People & culture</li>
+          <Link className="link" to="/peopleandculture">
+          <li><img src="/peopleCulture.png"/></li>
           </Link>
-          <Link to="/policies">
+          <Link className="link" to="/policies">
           <li>Policies</li>
           </Link>
-          <Link to="/managment/resources">
+          <Link className="link" to="/managment/resources">
           <li>Management resources</li>
           </Link>
         </ul>
