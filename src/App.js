@@ -18,29 +18,27 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <div>
-          <div className="logo">
-            <img className="greyscale" src="/greyscale/Slite.png"/>
-            <img className="greyscale" src="/logo/logo--color.png" />
-          </div>
-          <div className="main-container">
-            <Breadcrumbs />
-            <Nav />
-            <Switch>
-              <Route path="/favorites">
-                <Favorites />
-              </Route>
-              <Route path="/peopleandculture">
-                <PeopleAndCulture />
-              </Route>
-              <Route path="/policies">
-                <Policies />
-              </Route>
-              <Route path="/managment/resources">
-                <ManagementResources />
-              </Route>
-            </Switch>
-          </div>
+        <div className="logo">
+          <img className="greyscale" src="/greyscale/Slite.png"/>
+          <img className="greyscale" src="/logo/logo--color.png" />
+        </div>
+        <div className="main-container">
+          <Breadcrumbs />
+          <Nav />
+          <Switch>
+            <Route path="/favorites">
+              <Favorites />
+            </Route>
+            <Route path="/peopleandculture">
+              <PeopleAndCulture />
+            </Route>
+            <Route path="/policies">
+              <Policies />
+            </Route>
+            <Route path="/managment/resources">
+              <ManagementResources />
+            </Route>
+          </Switch>
         </div>
       </Router>
     );
