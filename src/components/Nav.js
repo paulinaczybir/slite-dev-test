@@ -8,16 +8,16 @@ import { Link } from 'react-router-dom';
       <nav>
         <ul>
           <Link className="link" to="/favorites">
-          <li><img className="icon-small" src="/star-plain/Star/plain.png" />Favorites</li>
+          <li><img src="/favorites.png"/></li>
           </Link>
           <Link className="link" to="/peopleandculture">
           <li><img src="/peopleCulture.png"/></li>
           </Link>
           <Link className="link" to="/policies">
-          <li>Policies</li>
+          <li><img src="/policies.png"/></li>
           </Link>
           <Link className="link" to="/managment/resources">
-          <li>Management resources</li>
+          <li><img src="/management-resources.png"/></li>
           </Link>
         </ul>
       </nav>
