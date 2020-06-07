@@ -18,13 +18,13 @@ class Nav extends Component {
       <nav>
         <ul>
             <li>
-              <div onClick={this.toggleCollapse}>
+              <div className="link" onClick={this.toggleCollapse}>
                 ⭐️Favorites
                 <img src="/chevron-down.png" />
               </div>
               <ul className={this.state.expand ? "expand" : "hide"}>
                 <Link className="link" to="/peopleandculture">
-                  <li>
+                  <li id="favorite-link">
                     🏅People & culture
                   </li>
                 </Link>

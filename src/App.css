@@ -1,7 +1,8 @@
 body {
   background-color: #5168EC;
   background-image: url(/background.png);
-  background-repeat: repeat-x;
+  background-repeat: no-repeat;
+  background-size: 100%;
   
 }
 
@@ -27,6 +28,7 @@ body {
   grid-column-end: span 4;
   grid-row-start: 1;
   margin: 2rem;
+  color: #46474F;
 }
 
 nav {
@@ -41,10 +43,22 @@ nav ul {
 li {
   list-style: none;
   padding: 0.2rem 0;
+  color: #46474F;
+  margin-bottom: 0.8rem;
+  font-size: 15px;
+}
+
+#favorite-link {
+  margin: 0.5rem 0 0 0;
+  border: 2px solid  #5168EC;
+  border-radius: 4px;
+  background-color: #5168EC;
+  color: #FDFDFD;
 }
 
 .link {
   text-decoration: none;
+ 
 }
 
 .icon-small {
@@ -69,7 +83,7 @@ li {
   font-weight: bold;
   font-family: SF Pro Text;
   font-style: normal;
-  font-size: 46px;
+  font-size: 50px;
   line-height: 55px;
   color: #46474F;
   grid-row-start: 1;
@@ -83,7 +97,7 @@ li {
   grid-column-start: 3;
   grid-column-end: span 8;
   grid-row-start: 2;
-  border-left: 10px solid #5168EC;;
+  border-left: 10px solid #5168EC;
   border-radius: 4px;
   display: grid;
   grid-template-columns: auto auto;
@@ -144,8 +158,11 @@ color: #46474F;
   padding: 1rem;
 }
 
+ul.expand {
+  padding: 0 0 0 2rem;
+}
 .expand {
-  display: block
+  display: block;
 }
 
 .hide {
