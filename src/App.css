@@ -67,6 +67,7 @@ li {
 
 .chevron-down {
   margin-left: 5rem;
+  float: right;
 }
 
 #favorite-link {
@@ -96,28 +97,20 @@ li {
 }
 
 .editorial-container {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  padding: 3rem 10rem;
 }
 
 .editorial-header {
   font-weight: bold;
-  font-family: SF Pro Text;
   font-style: normal;
   font-size: 50px;
   line-height: 55px;
   color: #46474F;
-  grid-row-start: 1;
-  grid-column-start: 2;
-  grid-column-end: span 8;
-  padding: 5rem 5rem 2rem 5rem;
+  margin-bottom: 2rem;
 }
 
 .editorial-info {
   background-image: url(/rectangle-info-background.png);
-  grid-column-start: 3;
-  grid-column-end: span 9;
-  grid-row-start: 2;
   border-left: 10px solid #5168EC;
   border-radius: 4px;
   display: grid;
@@ -126,21 +119,18 @@ li {
 }
 
 .editorial-info-text {
-font-family: SF Pro Text;
-font-style: normal;
-font-weight: normal;
-font-size: 20px;
-line-height: 26px;
-padding: 1rem;
-color: #46474F;
+  font-family: SF Pro Text;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 26px;
+  padding: 1rem;
+  color: #46474F;
 }
 
 
 .editorial-note-link {
-  grid-column-start: 3;
-  grid-column-end: span 9;
-  margin: 0.6rem;
-
+  margin: 1.3rem 0;
 }
 
 .note-link-img {
