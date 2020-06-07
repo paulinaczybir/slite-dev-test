@@ -1,27 +1,44 @@
-import React, { Component } from 'react'
-import { Link } from 'react-router-dom';
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
- class Nav extends Component {
+class Nav extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      expand: false,
+    };
+  }
+
+  toggleCollapse = () => {
+    this.setState({ expand: !this.state.expand });
+  };
 
   render() {
     return (
       <nav>
         <ul>
-          <Link className="link" to="/favorites">
-          <li><img src="/favorites.png"/></li>
-          </Link>
-          <Link className="link" to="/peopleandculture">
-          <li><img src="/peopleCulture.png"/></li>
-          </Link>
+            <li>
+              <div onClick={this.toggleCollapse}>
+                ⭐️Favorites
+                <img src="/chevron-down.png" />
+              </div>
+              <ul className={this.state.expand ? "expand" : "hide"}>
+                <Link className="link" to="/peopleandculture">
+                  <li>
+                    🏅People & culture
+                  </li>
+                </Link>
+              </ul>
+            </li>
           <Link className="link" to="/policies">
-          <li><img src="/policies.png"/></li>
+            <li>📚Policies</li>
           </Link>
           <Link className="link" to="/managment/resources">
-          <li><img src="/management-resources.png"/></li>
+            <li>📖Management resources</li>
           </Link>
         </ul>
       </nav>
-    )
+    );
   }
 }
 

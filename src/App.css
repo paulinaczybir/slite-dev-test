@@ -1,5 +1,8 @@
 body {
-  background-color: #B0BBFF;
+  background-color: #5168EC;
+  background-image: url(/background.png);
+  background-repeat: repeat-x;
+  
 }
 
 .main-container {
@@ -139,4 +142,12 @@ color: #46474F;
 .info-img {
   display: block;
   padding: 1rem;
+}
+
+.expand {
+  display: block
+}
+
+.hide {
+  display: none;
 }

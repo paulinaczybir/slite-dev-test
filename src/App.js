@@ -23,7 +23,7 @@ class App extends Component {
             <img className="greyscale" src="/logo/logo--color.png" />
           </div>
           <div className="main-container">
-            <div className="breadcrumbs"><img src="/favorites.png"/><img className="icon-chevron" src="/i-chevron.png"/> <img src="/peopleCultureBlack.png"/></div>
+            <div className="breadcrumbs">⭐️Favorites<img src="/favorites.png"/><img className="icon-chevron" src="/i-chevron.png"/>🏅People & culture <img src="/peopleCultureBlack.png"/></div>
             <Nav />
             <Switch>
               <Route path="/favorites">
