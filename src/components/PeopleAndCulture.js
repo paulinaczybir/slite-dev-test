@@ -14,17 +14,23 @@ class PeopleAndCulture extends Component {
               values, and get the full overview of the tools we use.
             </div>
           </div>
-          <div className="editorial-note-link1">
-            <img className="note-link-img" src="/note-link.png" />
-            <span className="note-link-text">Our culture</span>
+          <div className="editorial-note-link">
+            <span className="note-link-text">
+              <img className="note-link-img" src="/note-link.png" />
+              Our culture
+            </span>
           </div>
-          <div className="editorial-note-link2">
-            <img className="note-link-img" src="/note-link.png" />
-            <span className="note-link-text">Values</span>
+          <div className="editorial-note-link">
+            <span className="note-link-text"> 
+              <img className="note-link-img" src="/note-link.png" />
+              Values
+            </span>
           </div>
-          <div className="editorial-note-link3">
-            <img className="note-link-img" src="/note-link.png" />
-            <span className="note-link-text">Tips & tricks</span>
+          <div className="editorial-note-link">
+            <span className="note-link-text">
+              <img className="note-link-img" src="/note-link.png" />
+              Tips & tricks
+            </span>
           </div>
         </div>
       </div>

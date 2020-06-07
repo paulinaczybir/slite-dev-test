@@ -9,22 +9,26 @@ export default class ManagementResources extends Component {
         <div className="editorial-info">
           <img className="info-img" src="/info.png" />
           <div className="editorial-info-text">
-            Here you’ll find all the important information related to our
-            internal culture. You can read about our story, learn about our
-            values, and get the full overview of the tools we use.
+          Lorem ipsum pain sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure pain in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </div>
         </div>
-        <div className="editorial-note-link1">
-          <img className="note-link-img" src="/note-link.png" />
-          <span className="note-link-text">Our culture</span>
+        <div className="editorial-note-link">
+          <span className="note-link-text">
+            <img className="note-link-img" src="/note-link.png" />
+            Review Template
+          </span>
         </div>
-        <div className="editorial-note-link2">
-          <img className="note-link-img" src="/note-link.png" />
-          <span className="note-link-text">Values</span>
+        <div className="editorial-note-link">
+          <span className="note-link-text">
+            <img className="note-link-img" src="/note-link.png" />
+            Funny Cat's Pictures
+          </span>
         </div>
-        <div className="editorial-note-link3">
-          <img className="note-link-img" src="/note-link.png" />
-          <span className="note-link-text">Tips & tricks</span>
+        <div className="editorial-note-link">
+          <span className="note-link-text">
+            <img className="note-link-img" src="/note-link.png" />
+            Favourite Cupcakes recipes
+          </span>
         </div>
       </div>
     </div>

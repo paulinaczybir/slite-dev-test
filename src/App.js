@@ -6,6 +6,7 @@ import PeopleAndCulture from './components/PeopleAndCulture';
 import ManagementResources from './components/ManagementResources';
 import Favorites from './components/Favorites';
 import Policies from './components/Policies';
+import Breadcrumbs from './components/Breadcrumbs';
 
 
 class App extends Component {
@@ -23,7 +24,7 @@ class App extends Component {
             <img className="greyscale" src="/logo/logo--color.png" />
           </div>
           <div className="main-container">
-            <div className="breadcrumbs">⭐️Favorites<img src="/favorites.png"/><img className="icon-chevron" src="/i-chevron.png"/>🏅People & culture <img src="/peopleCultureBlack.png"/></div>
+            <Breadcrumbs />
             <Nav />
             <Switch>
               <Route path="/favorites">
@@ -46,3 +47,6 @@ class App extends Component {
   }
 }
 export default App;
+
+/*
+<div className="breadcrumbs">⭐️Favorites<img src="/favorites.png"/><img className="icon-chevron" src="/i-chevron.png"/>🏅People & culture <img src="/peopleCultureBlack.png"/></div> */
