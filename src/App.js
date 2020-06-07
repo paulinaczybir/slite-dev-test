@@ -1,26 +1,47 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import {BrowserRouter as Router, Switch, Route, Redirect} from 'react-router-dom';
+import Nav from './components/Nav';
+import PeopleAndCulture from './components/PeopleAndCulture';
+import ManagementResources from './components/ManagementResources';
+import Favorites from './components/Favorites';
+import Policies from './components/Policies';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {}
+  }
+
+  render() {
+    return (
+      <Router>
+        <div>
+          <div className="logo">
+            <img className="greyscale" src="/greyscale/Slite.png"/>
+            <img className="greyscale" src="/logo/logo--color.png" />
+          </div>
+          <div className="main-container">
+            <Nav />
+            <Switch>
+              <Route path="/favorites">
+                <Favorites />
+              </Route>
+              <Route path="/peopleandculture">
+                <PeopleAndCulture />
+              </Route>
+              <Route path="/policies">
+                <Policies />
+              </Route>
+              <Route path="/managment/resources">
+                <ManagementResources />
+              </Route>
+            </Switch>
+          </div>
+        </div>
+      </Router>
+    );
+  }
 }
-
 export default App;
