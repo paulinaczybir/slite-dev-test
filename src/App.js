@@ -35,7 +35,7 @@ class App extends Component {
             <Route path="/policies">
               <Policies />
             </Route>
-            <Route path="/managment/resources">
+            <Route path="/management/resources">
               <ManagementResources />
             </Route>
           </Switch>

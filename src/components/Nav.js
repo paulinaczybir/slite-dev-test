@@ -33,7 +33,7 @@ class Nav extends Component {
           <Link className="link" to="/policies">
             <li>📚 Policies</li>
           </Link>
-          <Link className="link" to="/managment/resources">
+          <Link className="link" to="/management/resources">
             <li>📖 Management resources</li>
           </Link>
         </ul>

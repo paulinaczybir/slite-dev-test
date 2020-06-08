@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 class PeopleAndCulture extends Component {
+
   render() {
     return (
       <div className="editorial-component">
