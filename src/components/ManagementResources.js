@@ -3,6 +3,7 @@ import NoteLink from "./NoteLink";
 import EditorialInfo from "./EditorialInfo";
 
 export default class ManagementResources extends Component {
+  
   render() {
     return (
       <div className="editorial-component">

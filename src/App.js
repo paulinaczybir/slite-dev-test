@@ -12,7 +12,15 @@ import Breadcrumbs from './components/Breadcrumbs';
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {}
+    this.state = {
+      breadcrumbDisplay: "peopleandculture"
+    }
+  }
+
+  changeBreadcrumb = (newBreadcrumb) => {
+    this.setState({
+      breadcrumbDisplay: newBreadcrumb
+    })
   }
 
   render() {
@@ -23,8 +31,8 @@ class App extends Component {
           <img className="greyscale" src="/logo/logo--color.png" />
         </div>
         <div className="main-container">
-          <Breadcrumbs />
-          <Nav />
+          <Breadcrumbs breadcrumbDisplay={this.state.breadcrumbDisplay}/>
+          <Nav changeBreadcrumb={this.changeBreadcrumb} />
           <Switch>
             <Route path="/favorites">
               <Favorites />
@@ -45,6 +53,3 @@ class App extends Component {
   }
 }
 export default App;
-
-/*
-<div className="breadcrumbs">⭐️Favorites<img src="/favorites.png"/><img className="icon-chevron" src="/i-chevron.png"/>🏅People & culture <img src="/peopleCultureBlack.png"/></div> */

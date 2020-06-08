@@ -43,11 +43,15 @@ body {
 .breadcrumbs {
   grid-column-end: span 12;
   grid-row-start: 1;
-  padding-left:  2rem;
+  padding: 0 2rem;
   color: #46474F;
   clear: both;
   border-bottom: 2px solid #EFEFF1;
   margin-bottom: 0;
+}
+
+.favorite-icon {
+  float: right;
 }
 
 nav {
@@ -72,6 +76,9 @@ li {
 
 #favorite-link {
   margin: 0.5rem 0 0 0;
+}
+
+.active-link {
   border: 2px solid  #5168EC;
   border-radius: 4px;
   background-color: #5168EC;
@@ -106,7 +113,7 @@ li {
 }
 
 .editorial-info {
-  background-image: url(/rectangle-info-background.png);
+  background-color: #EDF1FF;
   border-left: 10px solid #5168EC;
   border-radius: 4px;
   display: grid;

@@ -3,6 +3,7 @@ import NoteLink from "./NoteLink";
 import EditorialInfo from "./EditorialInfo";
 
 class PeopleAndCulture extends Component {
+  
   render() {
     return (
       <div className="editorial-component">
